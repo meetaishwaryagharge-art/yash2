@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yash Fainance</title>
+    <!--<link rel="stylesheet" href="index1.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+/* ================= GLOBAL ================= */
+body {
+    font-family: 'Open Sans', sans-serif; /* Subtitle Font */
+}
+
+/* Titles Font */
+h1, h2, h3, h4, h5, h6,
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+/* Navbar */
+.navbar {
+    background:#3b58a4;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+nav ul li a:hover {
+    color:orange;
+}
+
+/* Hero Section*/
+
+.hero {
+    height: 100vh;
+    background: url("https://media.istockphoto.com/id/1795167728/photo/growth-in-business-and-finance-growing-graphs-and-charts.jpg?s=612x612&w=0&k=20&c=626gZ0gRzvxnmVODOIGYmIlMWnFc5Uv5fV7OrddBp-w=") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   /* THIS MAKES CONTENT LEFT SIDE */
+    text-align: left;              /* ALIGN TEXT LEFT */
+}
+
+.hero-content {
+    position: relative;
+    color: #fff;
+    max-width: 600px;
+    margin-left: 50px;            /* SPACE FROM LEFT */
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.btn {
+    background: #3b58a4;
+    color: #fff;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: orange;
+}
+
+
+/*service*/
+/* Remove default margin */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Services Section (White Background) ===== */
+.services-section {
+  background: #ffffff;   /* White background */
+  padding: 80px 20px;
+  width: 100%;
+}
+
+/* Container */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Card */
+.service-card {
+  background: #ffffff;
+  border: 2px solid #eaeaea;
+  border-radius: 15px;
+  width: 250px;
+  padding: 40px 20px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hover Effect */
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* Circle */
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin-bottom: 15px;
+}
+
+/* Image inside circle */
+.icon-circle img {
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: contain;
+}
+
+/* Title Font (Montserrat) */
+.service-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #0D1F3C;
+}
+
+/* Paragraph */
+.service-card p {
+  font-size: 14px;
+  color: #555;
+}
+/* Navy Blue Color Code */
+:root {
+  --navy-blue: #1E3A8A;
+}
+
+/* Title */
+.service-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 10px 0;
+  color: var(--navy-blue);
+}
+
+/* Paragraph */
+.service-card p {
+  font-size: 14px;
+  color: var(--navy-blue);
+}
+
+/* (Optional) Make everything inside section navy */
+.services-section {
+  color: var(--navy-blue);
+}
+
+
+/*aboutus*/
+body {
+    background: #fff;
+}
+
+/* Section */
+.info-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+/* Layout */
+.info-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+/* Image */
+.info-image {
+    position: relative;
+    width: 45%;
+}
+
+.info-image img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Play Button */
+.play-btn {
+    width: 80px;
+    height: 80px;
+    background: #3a49ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play-btn i {
+    color: #fff;
+    font-size: 26px;
+    margin-left: 4px;
+}
+
+/* Content */
+.info-content {
+    width: 55%;
+}
+
+.info-content h2 {
+    font-size: 36px;
+    color: #0b1c64;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.info-content h2 span {
+    color: #3a49ff;
+}
+
+.info-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #2b2b7c;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.about-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 32px;
+    background: #f0f2f8;
+    color: #0b1c64;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.about-btn:hover {
+    background: #3a49ff;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .info-container {
+        flex-direction: column;
+    }
+
+    .info-image,
+    .info-content {
+        width: 100%;
+    }
+}
+
+/*planner*/
+body {
+    background: #f4f6fb;
+}
+
+/* Section */
+.planner-section {
+    padding: 100px 0;
+}
+
+/* Header */
+.planner-header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.planner-header .left {
+    width: 40%;
+}
+
+.planner-header h2 {
+    font-size: 42px;
+    color: #0b1c64;
+    line-height: 1.3;
+}
+
+.planner-header h2 span {
+    color: #3a49ff;
+    font-style: italic;
+}
+
+.line {
+    width: 50px;
+    height: 3px;
+    background: #0b1c64;
+    margin-top: 15px;
+}
+
+.planner-header .right {
+    width: 50%;
+}
+
+.planner-header p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #2b2b7c;
+}
+
+.section-title{text-align:center;color:#3b58a4;font-size:32px;margin-bottom:20px;}
+    
+    .planner-grid, .insurance-grid{display:flex;flex-wrap:wrap;gap:40px;justify-content:center;}
+    
+    .planner-card, .insurance-card{background:#ffff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);width:300px;overflow:hidden;text-align:center;padding:0;}
+    
+    .planner-card img{width:100%;height:200px;object-fit:cover;}
+    
+    .planner-card h3, .insurance-card h3{font-size:22px;color:#3b58a4;margin:15px 0 10px 0;}
+    .planner-card p, .insurance-card p{margin:0 15px 15px;color:#555;font-size:15px;}
+
+
+/* Button */
+.planner-btn {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.planner-btn a {
+    display: inline-block;
+    background-color: #3b58a4;
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.planner-btn a:hover {
+    background:  orange;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .planner-header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .planner-header .left,
+    .planner-header .right {
+        width: 100%;
+    }
+
+    .planner-cards {
+        flex-direction: column;
+    }
+}
+
+/*faq*/
+body {
+    background: #f4f6fb;
+}
+
+/* Section */
+.faq-section {
+    padding: 100px 0;
+}
+
+/* Container */
+.faq-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+/* LEFT FAQ */
+.faq-left {
+    width: 60%;
+    padding-right: 50px;
+}
+
+.faq-left h2 {
+    font-size: 42px;
+    color: #0b1c64;
+}
+
+.faq-left h2 span {
+    color: #3a49ff;
+    font-style: italic;
+}
+
+.line {
+    width: 50px;
+    height: 3px;
+    background: #0b1c64;
+    margin: 15px 0 40px;
+}
+
+/* FAQ Item */
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 25px 0;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.faq-question h4 {
+    flex: 1;
+    font-size: 18px;
+    color: #0b1c64;
+}
+
+.faq-question i {
+    color: #7bd500;
+    font-size: 18px;
+}
+
+/* Answer */
+.faq-answer {
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+.faq-answer p {
+    color: #2b2b7c;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* RIGHT STATS */
+.faq-right {
+    width: 40%;
+    background: linear-gradient(135deg);
+    padding: 60px 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.faq-right img{
+    width: 350px;
+    height: 350px;
+}
+.stats-box h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.stats-box p {
+    font-size: 18px;
+    color: #d6e0ff;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .faq-container {
+        flex-direction: column;
+    }
+
+    .faq-left,
+    .faq-right {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+/*footer*/
+ footer {
+    background: #3b58a4;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.footer-inner div {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-inner h3, .footer-inner h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-inner p, .footer-inner li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-inner ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-inner ul li {
+    margin-bottom: 10px;
+}
+
+.footer-inner ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-inner ul li a:hover {
+    color:orange;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 30px;
+    background:#3b58a4;
+    font-size: 13px;
+    border-top: 1px solid #333;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-inner div {
+        margin-bottom: 50px;
+    }
+}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="container nav-flex">
+        <div class="logo">
+            <img src="WhatsApp Image 2026-02-18 at 3.35.04 PM.webp" alt="Finano Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="our cases.html">Our Cases</a></li>
+                <li><a href="contact-us.html">Contact Us</a>
+                    
+             <a href="tel:+919876543210">+91 98765 43210</a>
+        
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!--hero-->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <h1>Your Direct Path to Smarter Finance</h1>
+        <p>
+            We source, verify, and fast-track your loans through 50+ banking partners for you	
+        </p>
+        <a href="#" class="btn">Check Eligibility</a>
+    </div>
+</section>
+
+</body>
+</html>
+<section>
+<!--service-->
+
+<section class="services-section">
+  <div class="services-container">
+
+    <div class="service-card">
+      <div class="icon-circle">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIBhvEGwSu9kWDpxN4hxcRV4624WcaUJKeaQ&s" alt="Professional Advice">
+      </div>
+      <h3>Professional Advice</h3>
+      <p>We analyze your financial goals and provide personalized solutions to help you grow your wealth safely.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon-circle">
+        <img src="https://as2.ftcdn.net/jpg/06/80/17/81/1000_F_680178141_E1FdReNwPDBiOHtAk86MkeNGJsjs3Wr3.jpg" alt="Fully Independent">
+      </div>
+      <h3>Fully Independent</h3>
+      <p>We provide financial advice that is completely independent, ensuring that our guidance is solely in your best interest.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon-circle">
+        <img src="https://static.vecteezy.com/system/resources/previews/029/262/303/non_2x/transparency-glyph-icon-for-personal-and-commercial-use-free-vector.jpg" alt="Transparent">
+      </div>
+      <h3>Transparent</h3>
+      <p>We provide complete clarity on every financial product, process, and term—no hidden clauses or surprises.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon-circle">
+        <img src="https://static.vecteezy.com/system/resources/previews/025/916/870/non_2x/installation-and-support-icon-flat-design-best-icon-free-vector.jpg" alt="Great Support">
+      </div>
+      <h3>Great Support</h3>
+      <p>We offer tailored support based on your financial needs, ensuring every solution fits you perfectly.</p>
+    </div>
+
+  </div>
+</section>
+
+<!--aboutus-->
+<section class="info-section">
+    <div class="info-container">
+
+        <!-- Left Image -->
+        <div class="info-image">
+            <img src="https://static.toiimg.com/thumb/msid-123023895,imgsize-167473,width-400,resizemode-4/123023895.jpg" alt="Video Image">
+            
+        </div>
+
+        <!-- Right Content -->
+        <div class="info-content">
+            <h2>
+                Transform Your Financial Future Effortlessly
+            </h2>
+
+            <p>
+                Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+            </p>
+
+            <div class="criteria-list">
+                <span>✔</span> 20 Years of Experience<br>
+                <span>✔</span> 45 Team Members
+                
+        </div>
+
+    </div>
+</section>
+
+
+<!--planner-->
+<section class="planner-section">
+    <div class="planner-header">
+        <div class="left">
+            <h2>
+                Explore What  We Offer
+            </h2>
+        </div>
+        <div class="right">
+            <p>
+                Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore <br>
+                magna aliqua doloream aliqya eismod.</div>
+				</div>
+            </p>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <section class="container">
+   
+    <div class="planner-grid">
+        <div class="planner-card">
+            <img src="https://easyhomefinance.in/knowledge-hub/wp-content/uploads/2025/07/loan-buy-house-pressure-buy-house.jpg" alt="">
+            <h3>Home Loans</h3>
+            <p>Flexible duration and EMI planning for buying, constructing, or renovating your house.</p>
+        </div>
+        <div class="planner-card">
+            <img src="https://bfsi.eletsonline.com/wp-content/uploads/2023/01/Business-Loan.jpg" alt="">
+            <h3>Business Loans</h3>
+            <p>Capital support to grow your business, expand operations, or launch new products.</p>
+        </div>
+        <div class="planner-card">
+            <img src="https://www.rupeecircle.com/client-assets/images/loan-type/education-loan.jpg" alt="">
+            <h3>Education Loans</h3>
+            <p>Low EMI options to support higher education aspirations in India and abroad.</p>
+        </div>
+        </div>
+    <!-- Button -->
+    <div class="planner-btn">
+        <a href="#">More Services</a>
+    </div>
+
+</section>
+
+
+<!--faq-->
+<section class="faq-section">
+    <div class="faq-container">
+
+        <!-- LEFT FAQ -->
+        <div class="faq-left">
+            <h2>
+                Why We Choose
+            </h2>
+            <h1>Get Expert Advice and <br>Start Saving</h1>
+
+           <div class="faq-item active">
+               <p>
+                       The professional bridge to your financial goals 50+ Banking</p> 
+					   <p>Partners  Access a massive
+                         range of loan options from top nationalized banks,</P>
+						 <p>private banks, and NBFCs under one roof.</p>
+
+                        
+                    </p>
+            </div>
+             </div>
+
+        <!-- RIGHT STATS -->
+        <div class="faq-right">
+             <div class="info-image">
+            <img src="https://static.toiimg.com/thumb/msid-123023895,imgsize-167473,width-400,resizemode-4/123023895.jpg" alt="Video Image">
+             </div>
+
+    </div>
+</section>
+
+
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <footer>
+  <div class="footer-inner">
+    <div>
+      <h3>Yash Finance Solutions</h3>
+      <p>Your trusted partner for loans and financial growth.</p>
+      <p> +91 88504 29320</p>
+      <p>Malad West, Mumbai</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="our cases.html">Our Cases</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Working Hours</h4>
+      <p>🕘10 AM – 6 PM</p>
+      <p>Monday – Saturday</p>
+      <p>✔ 24/7 Call Support</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Yash Finance Solutions. All Rights Reserved.
+  </div>
+</footer>
+
+    </body>
+</html>

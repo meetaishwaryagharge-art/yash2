@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Cases - Yash Finance Solutions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+/* GLOBAL */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+}
+.navbar {
+    background:#3b58a4;   /* same blue tone */
+    height: 150px;         /* exact header height */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Push content below fixed header */
+body {
+    margin: 0;
+    padding-top: 150px;  /* must match header height */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-container {
+    max-width: 1300px;
+    margin: auto;
+    height: 150px;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    height: 100px;
+
+}
+
+/* Navigation */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+	 padding: 0;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;   /* smaller size */
+    letter-spacing: 0.3px;
+    transition: 0.3s ease;
+}
+
+
+.nav-menu li a:hover {
+    opacity: 0.8;
+}
+.nav-menu li a:hover {
+    color: orange;
+}
+
+/* Phone */
+.phone a {
+    font-weight: 700;
+}
+
+.phone i {
+    color: #ff4d4d;
+    margin-right: 6px;
+}
+
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("https://www.shutterstock.com/image-vector/abstract-digital-financial-chart-line-260nw-2646194647.jpg") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+}
+.hero h1{
+    position:relative;
+    color:#fff;
+    font-size:42px;
+}
+.hero p{
+    position:relative;
+    color:#fff;
+    font-size:18px;
+    margin-top:8px;
+}
+
+/* CONTAINER */
+.container{max-width:1150px;margin:auto;padding:60px 20px;}
+
+/* SECTION TITLE */
+.section-title{text-align:center;color: #3b58a4 ;font-size:32px;margin-bottom:20px;}
+
+/* TEAM GRID */
+.team-grid{display:flex;flex-wrap:wrap;gap:40px;justify-content:center;}
+.team-card{
+    background:#fff;
+    text-align:center;
+    width:240px;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.team-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+.team-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+.team-card h4{color: #3b58a4 ;margin-bottom:5px;}
+.team-card p{color:#555;font-size:14px;}
+
+/*footer*/
+ footer {
+    background: #3b58a4;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.footer-inner div {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-inner h3, .footer-inner h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-inner p, .footer-inner li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-inner ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-inner ul li {
+    margin-bottom: 10px;
+}
+
+.footer-inner ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-inner ul li a:hover {
+    color: #3b58a4 ;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background:#3b58a4;
+    font-size: 13px;
+    border-top: 1px solid #333;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-inner div {
+        margin-bottom: 25px;
+    }
+}
+    </style>
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="WhatsApp Image 2026-02-18 at 3.35.04 PM.webp" alt="Yash Finance">
+        </div>
+
+        <!-- Navigation -->
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="our cases.html">Our Cases</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li class="phone">
+                <a href="tel:+919876543210">
+    
+                        +91 98765 43210
+                    </a>
+            </li>
+        </ul>
+
+    </div>
+</header>
+<style>
+.hero {
+    height: 60vh;
+    background: url("https://www.shutterstock.com/image-vector/abstract-digital-financial-chart-line-260nw-2646194647.jpg") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;   /* small size */
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #f1f1f1;
+}
+
+
+/* Dark Overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);  /* darker background */
+}
+
+/* Content above overlay */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* 🔥 OUR CASES DARK WHITE */
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #f1f1f1;   /* dark white color */
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* makes it darker white */
+}
+</style>
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>OUR CASES</h1>
+    </div>
+</section>
+<!-- Cases-->
+<style>
+/* CASE GRID */
+.cases-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.case-card {
+    background: #fff;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.case-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.case-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.case-card:hover img {
+    transform: scale(1.05);
+}
+
+.case-card h3 {
+    color:  #3b58a4 ;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.case-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.case-card .case-link {
+    text-decoration: none;
+    color:  #3b58a4 ;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.case-card .case-link:hover {
+    color:  #3b58a4 ;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .cases-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+<style>
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+</style>
+<style>
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #3b58a4;
+}
+
+.case-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.case-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+.case-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #3b58a4;
+}
+
+.case-link:hover {
+    text-decoration: underline;
+}
+</style>
+<section class="container">
+    <div class="section-title">Our Cases</div>
+    <div class="cases-grid">
+        <div class="case-card">
+            <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Case 1">
+            <h3>Financial Growth Strategy</h3>
+            <p>Helping companies achieve exponential financial growth.</p>
+            <a href="#" class="case-link">Read More →</a>
+        </div>
+        <div class="case-card">
+            <img src="https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Case 2">
+            <h3>Startup Funding Advisory</h3>
+            <p>Guided startups to secure strategic funding and investors.</p>
+            <a href="#" class="case-link">Read More →</a>
+        </div>
+        <div class="case-card">
+            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Case 3">
+            <h3>Risk Management Plan</h3>
+            <p>Implemented risk strategies for long-term stability.</p>
+            <a href="#" class="case-link">Read More →</a>
+        </div>
+    </div>
+</section>
+
+<style>
+/*footer*/
+ footer {
+    background: #3b58a4;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.footer-inner div {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-inner h3, .footer-inner h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-inner p, .footer-inner li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-inner ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-inner ul li {
+    margin-bottom: 10px;
+}
+
+.footer-inner ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-inner ul li a:hover {
+    color:orange ;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background:#3b58a4;
+    font-size: 13px;
+    border-top: 1px solid #333;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-inner div {
+        margin-bottom: 25px;
+    }
+}
+</style>
+
+
+<!-- Footer -->
+    <footer>
+  <div class="footer-inner">
+    <div>
+      <h3>Yash Finance Solutions</h3>
+      <p>Your trusted partner for loans and financial growth.</p>
+      <p>+91 88504 29320</p>
+      <p>Malad West, Mumbai</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cases.html">Our Cases</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Working Hours</h4>
+      <p>🕘10 AM – 6 PM</p>
+      <p>Monday – Saturday</p>
+      <p>✔ 24/7 Call Support</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Yash Finance Solutions. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>
